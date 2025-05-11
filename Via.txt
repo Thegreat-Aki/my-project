@@ -1,0 +1,41 @@
+HTML
+
+<img class="smaller" src="file:///storage/emulated/0/Android/data/mark.via/files/content/logo.png" /><script src="https://widget.qweather.net/standard/static/js/he-standard-common.js?v=2.0"></script>
+<script type="text/javascript">
+var xhr = new XMLHttpRequest();
+xhr.open('get', 'https://v1.jinrishici.com/all.txt');
+xhr.onreadystatechange = function () {
+if (xhr.readyState === 4) {
+var gushici = document.getElementsByTagName("title")[0];
+gushici.innerText = xhr.responseText;
+}
+};
+xhr.send();
+</script>
+<script type="text/javascript">
+var s = false;
+var t =document.getElementsByTagName("title")[0];
+if(s){
+t.innerHTML = str[0]+str[1];
+}else{
+t.innerHTML = str[0];
+}
+</script><div id='time'></div><div id="timeprobg"><div id="timepro"></div></div></a><form onsubmit="return search()"class="search_bar"title="搜索"><button onclick="search()"id="search_submit"value=""aria-label="搜索"><div class="search icon"></div></button><span><input class="search"onfocus="showButton() , searchBtn()"onblur="hideButton(), offsearch()"type="text"value=""autocomplete="off"id="search_input"title="搜索"></span></form></script><script async src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto"></script></div><div style="display: none;"><script>function f(e){return e<10?"0"+e:e}function s(){let e=new Date;document.getElementById("time").innerHTML=f(e.getHours())+"  "+f(e.getMinutes()),document.getElementById("timepro").style.width=1.67*e.getSeconds()+"%"}s(),setInterval(function(){s()},1e3);let root=document.documentElement;const ScreenHeight=root.clientHeight;root.style.setProperty("--screenheight",ScreenHeight+"px"),document.getElementById("search_input").setAttribute("placeholder",getComputedStyle(root).getPropertyValue("--searchph"));let stylefouce=document.createElement("style");stylefouce.innerHTML=".search_bar{max-width:90%;}.frosted-glass{backdrop-filter:blur(10px)brightness(0.5);}.logo,#hitokoto,#box_container{opacity:0;pointer-events:none;}#hitokoto{transition-delay:-0.5s;filter: blur(10px);}";let onsearch,searchBar=document.getElementsByClassName("search_bar")[0];function searchBtn(){document.head.appendChild(stylefouce),onsearch=setTimeout("searchBar.style.transform = 'translateY(calc(100vh - ' + (ScreenHeight * 0.25 + document.getElementsByClassName('search_part')[0].clientHeight + 5) + 'px))';",400)}function offsearch(){clearTimeout(onsearch),document.head.removeChild(stylefouce),searchBar.style.transform="none"}document.addEventListener("DOMContentLoaded",function(){document.getElementsByTagName("title")[0].innerHTML=str[0]});</script>
+
+
+CSS
+
+:root {
+    /* 一言，不需要就填 none */
+    --yiyan: ;
+    /* 过渡动画时长 */
+    --transition: 0.48s;
+    /* 收藏与搜索框的距离 */
+    --boxtop: 25px;
+    /* 搜索框与时间的距离 */
+    --bartop: 0px;
+    /* 收藏一横排数量 */
+    --boxweight: 4;
+    /* 别动 */
+    --screenheight: 100vh;
+}.logo,#box_container,.search_bar{transition:var(--transition)}body{overflow:hidden;background:var(--bgurl) top no-repeat fixed;background-size:auto var(--screenheight)}.frosted-glass{left:0;transition:0.7s}#content{top:calc(var(--screenheight)*0.25)}.logo{display:block}#time{font-size:0px;text-shadow:0px 0px 0px #6b6666;color:rgba(255,255,255,0.8)}#timeprobg{background:rgba(255,255,255,0.5);width:0px;height:0px;margin:auto;border-radius:0px}#timepro{background:-webkit-linear-gradient(left,#e9defa,#fbfcdb);border-radius:5px;height:5px;transition:1s linear}.search_bar{background:rgba(255,255,255,0.5);backdrop-filter:blur(0px) !important;max-width:50%;z-index:10;margin-top:var(--bartop)}#search_input,#hitokoto{font-weight:bolder}.search.icon{animation:start 1s}#hitokoto{display:var(--yiyan);position:absolute;top:calc(var(--screenheight)*0.6);left:0;right:0;margin:auto;max-width:80%;color:black;border-radius:10px;background:rgba(255,255,255,0.5);transition:0.5s 0.5s}.bdSug_wpr td,.url{text-align:center !important;background:-webkit-linear-gradient(135deg,#eea2a2,#bbc1bf,#57c6e1,#b49fda,#7ac5d8);-webkit-background-clip:text;background-clip:text;color:transparent;animation:color 7s linear infinite}@keyframes color{to{filter:hue-rotate(360deg)}}.bdSug_wpr{top:auto !important;bottom:80px !important;min-height:calc(100vh - 80px);transform:rotate(0.5turn);background:transparent !important;backdrop-filter:blur(0px) !important;animation:start 0.4s}.bdSug_wpr table{transform:rotate(0.5turn)}@keyframes start{0%{opacity:0}}.box{width:calc(100% / var(--boxweight) - 2%);margin:5px 1%;height:3.2em;font-size:12px;border-radius:10px;box-shadow:rgba(255,255,255,0.6) 0px 22px 70px 4px;background:rgba(0,0,0,0.3)}#box_container{margin-top:var(--boxtop);width:85%;text-align:center}.url{width:90%;line-height:2.0em;margin:0.65em auto;font-size:12px;z-index:200}.title{display:none}
